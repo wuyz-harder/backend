@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.myblog.mapper.PaperMapper">
+    <select id="getPaper" resultType="com.example.myblog.entity.paper" >
+        select * from paper;
+    </select>
+    <insert id="setpaper" >
+        insert into paper(title, author, tag, textarea) values (#{title},#{author},#{tag},#{textarea})
+    </insert>
+</mapper>
