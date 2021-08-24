@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.util.*;
 
-@CrossOrigin(originPatterns = {"**"}, allowedHeaders = "*")
+@CrossOrigin(originPatterns = {"*"}, allowedHeaders = "*")
 @RestController
 public class paperController {
     @Value("${file.upload.abspath}")

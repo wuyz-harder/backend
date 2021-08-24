@@ -18,7 +18,7 @@ public class InterceptorConfig implements WebMvcConfigurer {
 //        一些静态资源跟登录的接口
         jwtExcludePatterns.add("/img/**");
         jwtExcludePatterns.add("/login/**");
-
+        jwtExcludePatterns.add("/ws/**");
         jwtExcludePatterns.add("/markdown/**");
         registry.addInterceptor(new SecurityInterceptor()).addPathPatterns("/**")
                 .excludePathPatterns(jwtExcludePatterns);
